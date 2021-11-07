@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: silver;
+    
+}
+img .container-products{
+    display: block;
+    width: 100%;
+}
+
+header{
+    background: #565b66;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.main{
+    padding:0 20px;
+}
+.box{
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    background: lightblue;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .buscar{
+    padding: 5px;
+    position: absolute;
+}
+
+header .buscar input{
+    margin: 75px 250px;
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+.btn{
+    margin: 75px 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #440080;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buscar:hover input{
+    width: 125px;
+}
+
+.buscar input:focus{
+    width: 250px;
+}
+
+header .logo{
+    color: #f2f2f2;
+    font-size: 200px;
+    line-height: 200px;
+    float: left;
+}
+
+
+header nav{
+    float: right;
+    line-height: 200px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background: #440080;
+    border-radius: 50px;
+}
+
+.header2{
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+.header2 .buscar input{
+    margin: 27px 230px;
+}
+
+.header2 .btn{
+    margin: 27px 230px;
+}
+.header2 nav{
+    line-height: 100px;
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.product__img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.product__titel{
+    text-align: center;
+}
+.product__price{
+    color: #6500bd;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+    header .logo,
+    header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .header2 {
+        height: auto;
+    }
+
+    .header2 .logo,
+    .header2 nav {
+        line-height: 50px;
+    }
+    .header2 .buscar input{
+    margin: 75px 250px;
+}
+.header2 .btn{
+    margin: 75px 250px;
+
+}
+.product__img {
+    height: 200px;
+  }
+
+}
+
